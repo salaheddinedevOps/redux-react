@@ -37,7 +37,7 @@ function Counter(props){
         setPerson(e.target.value);
     }
     function handleChangeAge(e){
-        if(e.target.value > 20){
+        if(e.target.value > 0){
             setAge(e.target.value);
         }else{
             setAge('Invalid Age');
