@@ -45,6 +45,7 @@ function Counter(props){
         
     }
     return <div className='all'>
+        <h1>Your Profile</h1>
     <div className='name'>
         <p>Your Name:{props.name}</p>
         <button onClick={()=>{setToDoEdit(0)}}>Edit</button>
@@ -68,6 +69,9 @@ function Counter(props){
         ):(
             console.log('Invalid')
         )}
+    </div>
+    <div className='save'>
+        <button onClick={()=>{setToDoEdit(2)}}>Save</button>
     </div>
     </div>
 }
